@@ -1,0 +1,26 @@
+// Do not edit this
+plugins {
+    id 'com.github.johnrengelman.shadow' version '7.0.0'
+    id 'java'
+}
+
+// Change 'group' to your domain backwards OR 'username.me'
+group 'me.astrosqaured.userunp'
+// Change 'version' to any version
+version '1.0-SNAPSHOT'
+
+// Do not edit this
+repositories {
+    mavenCentral()
+}
+
+// Do not edit this
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+// Do not edit this
+test {
+    useJUnitPlatform()
+}
