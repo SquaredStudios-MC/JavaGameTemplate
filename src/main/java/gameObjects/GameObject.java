@@ -27,6 +27,8 @@ public abstract class GameObject {
     public abstract void tick();
     public abstract void render(Graphics g);
     public abstract void keyPressEvent(int key);
+    public abstract void keyReleaseEvent(int key);
+    public abstract void keyTypeEvent(int key);
 
     public void setX(float x) {
         this.x = x;

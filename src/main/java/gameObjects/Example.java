@@ -41,4 +41,14 @@ public class Example extends GameObject {
             System.out.println("Hello World!");
         }
     }
+
+    @Override
+    public void keyReleaseEvent(int key) {
+        // On key release
+    }
+
+    @Override
+    public void keyTypeEvent(int key) {
+        // When you type into a text box
+    }
 }

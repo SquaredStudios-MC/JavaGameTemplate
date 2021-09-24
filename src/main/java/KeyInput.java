@@ -32,7 +32,15 @@ public class KeyInput extends KeyAdapter {
         int key = e.getKeyCode();
         for (GameObject object :
                 handler.objects) {
-            object.keyPressEvent(key);
+            object.keyReleaseEvent(key);
+        }
+    }
+
+    public void keyTyped(KeyEvent e) {
+        int key = e.getKeyCode();
+        for (GameObject object :
+                handler.objects) {
+            object.keyTypeEvent(key);
         }
     }
 }
