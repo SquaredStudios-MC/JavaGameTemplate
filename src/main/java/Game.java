@@ -3,13 +3,20 @@ import java.awt.image.BufferStrategy;
 
 public class Game extends Canvas implements Runnable {
 
-    public static final int WIDTH = 700, HEIGHT = WIDTH / 12 * 9;
+    // Configurable options
+    public static final int WIDTH = 700;
+    public static final int HEIGHT = WIDTH / 12 * 9;
+    public static final String TITLE = "Game Name";
+    public static final Color BACKGROUND_COLOR = Color.WHITE;
+
+    // You don't have to worry about anything below in the rest of the file
+
     private Thread thread;
     private boolean running = false;
     private final GameLoop gLoop = new GameLoop(this);
 
     public Game() {
-        new Window(WIDTH, HEIGHT, "Game Title", this);
+        new Window(WIDTH, HEIGHT, TITLE, this);
     }
 
     public static void main(String[] args) {

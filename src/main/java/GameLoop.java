@@ -2,6 +2,8 @@ import java.awt.*;
 import java.awt.image.BufferStrategy;
 
 public class GameLoop {
+    // The game loop, nothing too interesting here.
+
     private final Game game;
     private final Handler handler;
     public GameLoop(Game game) {
@@ -18,7 +20,7 @@ public class GameLoop {
         Graphics g = bs.getDrawGraphics();
 
         // render background - DO NOT REMOVE OR SCREEN WILL FLASH
-        g.setColor(Color.WHITE);
+        g.setColor(Game.BACKGROUND_COLOR);
         g.fillRect(0, 0, Game.WIDTH, Game.HEIGHT);
 
         handler.render(bs.getDrawGraphics());

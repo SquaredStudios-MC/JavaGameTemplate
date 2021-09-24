@@ -4,6 +4,8 @@ import java.util.LinkedList;
 import java.awt.*;
 
 public class Handler {
+    // This file renders the objects and ticks them
+
     LinkedList<GameObject> objects = new LinkedList<>();
 
     private Game game;
@@ -30,5 +32,9 @@ public class Handler {
 
     public void remObj(GameObject gObj) {
         objects.remove(gObj);
+    }
+
+    public void remAllObj() {
+        objects.clear();
     }
 }

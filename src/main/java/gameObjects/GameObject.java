@@ -4,6 +4,14 @@ import java.awt.*;
 
 public abstract class GameObject {
 
+    // The game object class.
+    //
+    // How to make a game object:
+    // 1. Make a new class in the gameObjects package
+    // 2. extends GameObject
+    // 3. insert methods (init, tick, render)
+    // 4. code the object
+
     protected float x, y, velX, velY;
     protected ID id;
 
