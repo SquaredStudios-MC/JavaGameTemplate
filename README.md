@@ -18,7 +18,7 @@ You can:
 3. Read comments in each file
 4. Watch the video tutorials
 ### Video tutorials
-This is a project from the first two episodes of the series below (with some minor modifications), i made this so you don't have to suffer.
+This is a project from the first three episodes of the series below (with some minor modifications), i made this so you don't have to suffer.
 https://www.youtube.com/playlist?list=PLWms45O3n--6TvZmtFHaCWRZwEqnz2MHa
 
 ## Issues & contribution

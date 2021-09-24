@@ -1,6 +1,7 @@
 package gameObjects;
 
 import java.awt.*;
+import java.awt.event.KeyEvent;
 
 public abstract class GameObject {
 
@@ -11,6 +12,8 @@ public abstract class GameObject {
     // 2. extends GameObject
     // 3. insert methods (init, tick, render)
     // 4. code the object
+    //
+    // Read KeyInput.java to learn how to listen for key events
 
     protected float x, y, velX, velY;
     protected ID id;
@@ -23,6 +26,7 @@ public abstract class GameObject {
 
     public abstract void tick();
     public abstract void render(Graphics g);
+    public abstract void keyPressEvent(int key);
 
     public void setX(float x) {
         this.x = x;

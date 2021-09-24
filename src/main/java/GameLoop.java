@@ -6,9 +6,13 @@ public class GameLoop {
 
     private final Game game;
     private final Handler handler;
+    private final KeyInput keyinput;
+
     public GameLoop(Game game) {
         this.game = game;
         this.handler = new Handler(game);
+        this.keyinput = new KeyInput(handler);
+        game.addKeyListener(keyinput);
     }
 
     public void render() {
